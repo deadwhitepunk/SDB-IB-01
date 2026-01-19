@@ -67,11 +67,11 @@
 8180/tcp open  http        Apache Tomcat/Coyote JSP engine 1.1
 
 - Какие уязвимости были вами обнаружены? (список со ссылками: достаточно трёх уязвимостей)
-  1)Apache Tomcat Manager - Application Deployer (Authenticated) Code Execution (Metasploit) https://www.exploit-db.com/exploits/16317 на порт 8180
+  Apache Tomcat Manager - Application Deployer (Authenticated) Code Execution (Metasploit) https://www.exploit-db.com/exploits/16317 на порт 8180
 
-  2)PostgreSQL - PostgreSQL 8.3.6 - Conversion Encoding Remote Denial of Service https://www.exploit-db.com/exploits/32849 на порт 5432
+  PostgreSQL - PostgreSQL 8.3.6 - Conversion Encoding Remote Denial of Service https://www.exploit-db.com/exploits/32849 на порт 5432
   
-  3) ftp - vsftpd 2.3.4 - Backdoor Command Execution https://www.exploit-db.com/exploits/49757 на порт 21
+  ftp - vsftpd 2.3.4 - Backdoor Command Execution https://www.exploit-db.com/exploits/49757 на порт 21
 
 Вывод NMAP:
 [nmap](https://github.com/deadwhitepunk/sdb-ib-01/blob/main/nmap)
