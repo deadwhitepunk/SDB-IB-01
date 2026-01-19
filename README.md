@@ -49,8 +49,8 @@
   2)PostgreSQL - PostgreSQL 8.3.6 - Conversion Encoding Remote Denial of Service https://www.exploit-db.com/exploits/32849 на порт 5432
   3) ftp - vsftpd 2.3.4 - Backdoor Command Execution https://www.exploit-db.com/exploits/49757 на порт 21
 
-
-*Приведите ответ в свободной форме.*  
+Вывод NMAP:
+[nmap](https://github.com/deadwhitepunk/sdb-ib-01/blob/main/nmap)
 
 Сканирование NMAP:
 
