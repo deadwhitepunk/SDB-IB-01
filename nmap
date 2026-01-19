@@ -1,0 +1,246 @@
+Starting Nmap 7.94 ( https://nmap.org ) at 2026-01-16 19:00 Russia TZ 4 Standard Time
+NSE: Loaded 156 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 19:00
+Completed NSE at 19:00, 0.00s elapsed
+Initiating NSE at 19:00
+Completed NSE at 19:00, 0.00s elapsed
+Initiating NSE at 19:00
+Completed NSE at 19:00, 0.00s elapsed
+Initiating ARP Ping Scan at 19:00
+Scanning 192.168.124.135 [1 port]
+Completed ARP Ping Scan at 19:00, 0.06s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 19:00
+Completed Parallel DNS resolution of 1 host. at 19:00, 6.51s elapsed
+Initiating SYN Stealth Scan at 19:00
+Scanning 192.168.124.135 [1000 ports]
+Discovered open port 5900/tcp on 192.168.124.135
+Discovered open port 111/tcp on 192.168.124.135
+Discovered open port 53/tcp on 192.168.124.135
+Discovered open port 21/tcp on 192.168.124.135
+Discovered open port 3306/tcp on 192.168.124.135
+Discovered open port 139/tcp on 192.168.124.135
+Discovered open port 23/tcp on 192.168.124.135
+Discovered open port 22/tcp on 192.168.124.135
+Discovered open port 25/tcp on 192.168.124.135
+Discovered open port 80/tcp on 192.168.124.135
+Discovered open port 445/tcp on 192.168.124.135
+Discovered open port 514/tcp on 192.168.124.135
+Discovered open port 2121/tcp on 192.168.124.135
+Discovered open port 1524/tcp on 192.168.124.135
+Discovered open port 5432/tcp on 192.168.124.135
+Discovered open port 8180/tcp on 192.168.124.135
+Discovered open port 8009/tcp on 192.168.124.135
+Discovered open port 1099/tcp on 192.168.124.135
+Discovered open port 6000/tcp on 192.168.124.135
+Discovered open port 2049/tcp on 192.168.124.135
+Discovered open port 512/tcp on 192.168.124.135
+Discovered open port 513/tcp on 192.168.124.135
+Discovered open port 6667/tcp on 192.168.124.135
+Completed SYN Stealth Scan at 19:00, 0.07s elapsed (1000 total ports)
+Initiating Service scan at 19:00
+Scanning 23 services on 192.168.124.135
+Completed Service scan at 19:00, 11.07s elapsed (23 services on 1 host)
+Initiating OS detection (try #1) against 192.168.124.135
+NSE: Script scanning 192.168.124.135.
+Initiating NSE at 19:00
+NSE: [ftp-bounce] PORT response: 500 Illegal PORT command.
+Completed NSE at 19:04, 238.03s elapsed
+Initiating NSE at 19:04
+Completed NSE at 19:05, 18.27s elapsed
+Initiating NSE at 19:05
+Completed NSE at 19:05, 0.00s elapsed
+Nmap scan report for 192.168.124.135
+Host is up (0.00053s latency).
+Not shown: 977 closed tcp ports (reset)
+PORT     STATE SERVICE     VERSION
+21/tcp   open  ftp         vsftpd 2.3.4
+|_ms-sql-ntlm-info: ERROR: Script execution failed (use -d to debug)
+|_ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to 192.168.124.1
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      vsFTPd 2.3.4 - secure, fast, stable
+|_End of status
+|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
+22/tcp   open  ssh         OpenSSH 4.7p1 Debian 8ubuntu1 (protocol 2.0)
+|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
+| ssh-hostkey: 
+|   1024 60:0f:cf:e1:c0:5f:6a:74:d6:90:24:fa:c4:d5:6c:cd (DSA)
+|_  2048 56:56:24:0f:21:1d:de:a7:2b:ae:61:b1:24:3d:e8:f3 (RSA)
+|_ms-sql-ntlm-info: ERROR: Script execution failed (use -d to debug)
+23/tcp   open  telnet      Linux telnetd
+|_ms-sql-ntlm-info: ERROR: Script execution failed (use -d to debug)
+|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
+25/tcp   open  smtp        Postfix smtpd
+|_ms-sql-ntlm-info: ERROR: Script execution failed (use -d to debug)
+|_ssl-date: 2026-01-14T15:04:49+00:00; -1d23h00m10s from scanner time.
+|_smtp-commands: metasploitable.localdomain, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN
+| sslv2: 
+|   SSLv2 supported
+|   ciphers: 
+|     SSL2_DES_192_EDE3_CBC_WITH_MD5
+|     SSL2_RC4_128_WITH_MD5
+|     SSL2_RC4_128_EXPORT40_WITH_MD5
+|     SSL2_RC2_128_CBC_EXPORT40_WITH_MD5
+|     SSL2_RC2_128_CBC_WITH_MD5
+|_    SSL2_DES_64_CBC_WITH_MD5
+|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
+53/tcp   open  domain      ISC BIND 9.4.2
+| dns-nsid: 
+|_  bind.version: 9.4.2
+|_ms-sql-ntlm-info: ERROR: Script execution failed (use -d to debug)
+|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
+80/tcp   open  http        Apache httpd 2.2.8 ((Ubuntu) DAV/2)
+|_http-server-header: Apache/2.2.8 (Ubuntu) DAV/2
+|_http-title: Metasploitable2 - Linux
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_ms-sql-ntlm-info: ERROR: Script execution failed (use -d to debug)
+|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
+111/tcp  open  rpcbind     2 (RPC #100000)
+|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
+|_ms-sql-ntlm-info: ERROR: Script execution failed (use -d to debug)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2            111/tcp   rpcbind
+|   100000  2            111/udp   rpcbind
+|   100003  2,3,4       2049/tcp   nfs
+|   100003  2,3,4       2049/udp   nfs
+|   100005  1,2,3      43415/tcp   mountd
+|   100005  1,2,3      54599/udp   mountd
+|   100021  1,3,4      48217/udp   nlockmgr
+|   100021  1,3,4      53996/tcp   nlockmgr
+|   100024  1          56908/tcp   status
+|_  100024  1          57155/udp   status
+139/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+|_ms-sql-ntlm-info: ERROR: Script execution failed (use -d to debug)
+|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
+445/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+|_ms-sql-ntlm-info: ERROR: Script execution failed (use -d to debug)
+|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
+512/tcp  open  exec        netkit-rsh rexecd
+|_ms-sql-ntlm-info: ERROR: Script execution failed (use -d to debug)
+|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
+513/tcp  open  login?
+|_ms-sql-ntlm-info: ERROR: Script execution failed (use -d to debug)
+|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
+514/tcp  open  tcpwrapped
+|_ms-sql-ntlm-info: ERROR: Script execution failed (use -d to debug)
+|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
+1099/tcp open  java-rmi    GNU Classpath grmiregistry
+|_ms-sql-ntlm-info: ERROR: Script execution failed (use -d to debug)
+|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
+1524/tcp open  bindshell   Metasploitable root shell
+|_ms-sql-ntlm-info: ERROR: Script execution failed (use -d to debug)
+|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
+2049/tcp open  nfs         2-4 (RPC #100003)
+|_ms-sql-ntlm-info: ERROR: Script execution failed (use -d to debug)
+|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
+2121/tcp open  ftp         ProFTPD 1.3.1
+|_ms-sql-ntlm-info: ERROR: Script execution failed (use -d to debug)
+|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
+3306/tcp open  mysql       MySQL 5.0.51a-3ubuntu5
+| mysql-info: 
+|   Protocol: 10
+|   Version: 5.0.51a-3ubuntu5
+|   Thread ID: 17
+|   Capabilities flags: 43564
+|   Some Capabilities: Support41Auth, Speaks41ProtocolNew, SwitchToSSLAfterHandshake, SupportsCompression, SupportsTransactions, ConnectWithDatabase, LongColumnFlag
+|   Status: Autocommit
+|_  Salt: .~Th1YN[^F&&.T=p@/g=
+|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
+|_ms-sql-ntlm-info: ERROR: Script execution failed (use -d to debug)
+5432/tcp open  postgresql  PostgreSQL DB 8.3.0 - 8.3.7
+|_ssl-date: 2026-01-14T15:04:49+00:00; -1d23h00m10s from scanner time.
+|_ms-sql-ntlm-info: ERROR: Script execution failed (use -d to debug)
+|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
+5900/tcp open  vnc         VNC (protocol 3.3)
+|_ms-sql-ntlm-info: ERROR: Script execution failed (use -d to debug)
+|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
+| vnc-info: 
+|   Protocol version: 3.3
+|   Security types: 
+|_    VNC Authentication (2)
+6000/tcp open  X11         (access denied)
+|_ms-sql-ntlm-info: ERROR: Script execution failed (use -d to debug)
+|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
+6667/tcp open  irc         UnrealIRCd
+|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
+| irc-info: 
+|   users: 1
+|   servers: 1
+|   lusers: 1
+|   lservers: 0
+|   server: irc.Metasploitable.LAN
+|   version: Unreal3.2.8.1. irc.Metasploitable.LAN 
+|   uptime: 0 days, 1:00:40
+|   source ident: nmap
+|   source host: 1AECD56.F4FDCFA7.FFFA6D49.IP
+|_  error: Closing Link: fzxidmuzb[192.168.124.1] (Quit: fzxidmuzb)
+|_ms-sql-ntlm-info: ERROR: Script execution failed (use -d to debug)
+8009/tcp open  ajp13       Apache Jserv (Protocol v1.3)
+|_ajp-methods: Failed to get a valid response for the OPTION request
+|_ms-sql-ntlm-info: ERROR: Script execution failed (use -d to debug)
+|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
+8180/tcp open  http        Apache Tomcat/Coyote JSP engine 1.1
+|_http-server-header: Apache-Coyote/1.1
+|_http-favicon: Apache Tomcat
+|_http-title: Apache Tomcat/5.5
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_ms-sql-ntlm-info: ERROR: Script execution failed (use -d to debug)
+|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
+MAC Address: 00:0C:29:8E:01:8E (VMware)
+Device type: general purpose
+Running: Linux 2.6.X
+OS CPE: cpe:/o:linux:linux_kernel:2.6
+OS details: Linux 2.6.9 - 2.6.33
+Uptime guess: 0.042 days (since Fri Jan 16 18:04:54 2026)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=194 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: Hosts:  metasploitable.localdomain, irc.Metasploitable.LAN; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_clock-skew: mean: -1d23h00m10s, deviation: 0s, median: -1d23h00m10s
+|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
+| nbstat: NetBIOS name: METASPLOITABLE, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+| Names:
+|   METASPLOITABLE<00>   Flags: <unique><active>
+|   METASPLOITABLE<03>   Flags: <unique><active>
+|   METASPLOITABLE<20>   Flags: <unique><active>
+|   \x01\x02__MSBROWSE__\x02<01>  Flags: <group><active>
+|   WORKGROUP<00>        Flags: <group><active>
+|   WORKGROUP<1d>        Flags: <unique><active>
+|_  WORKGROUP<1e>        Flags: <group><active>
+|_smb-os-discovery: ERROR: Script execution failed (use -d to debug)
+|_smb2-time: Protocol negotiation failed (SMB2)
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.53 ms 192.168.124.135
+
+NSE: Script Post-scanning.
+Initiating NSE at 19:05
+Completed NSE at 19:05, 0.00s elapsed
+Initiating NSE at 19:05
+Completed NSE at 19:05, 0.00s elapsed
+Initiating NSE at 19:05
+Completed NSE at 19:05, 0.00s elapsed
+Read data files from: C:\Program Files (x86)\Nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 278.05 seconds
+           Raw packets sent: 1020 (45.626KB) | Rcvd: 1016 (41.430KB)
