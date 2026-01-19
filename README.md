@@ -22,31 +22,55 @@
 Ответьте на следующие вопросы:
 
 - Какие сетевые службы в ней разрешены?
-21/tcp   open  ftp         vsftpd 2.3.4
-22/tcp   open  ssh         OpenSSH 4.7p1 Debian 8ubuntu1 (protocol 2.0)
-23/tcp   open  telnet      Linux telnetd
-25/tcp   open  smtp        Postfix smtpd
-53/tcp   open  domain      ISC BIND 9.4.2
-111/tcp  open  rpcbind     2 (RPC #100000)
-139/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
-445/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
-512/tcp  open  exec        netkit-rsh rexecd
-513/tcp  open  login?
-514/tcp  open  tcpwrapped
-1099/tcp open  java-rmi    GNU Classpath grmiregistry
-1524/tcp open  bindshell   Metasploitable root shell
-2049/tcp open  nfs         2-4 (RPC #100003)
-2121/tcp open  ftp         ProFTPD 1.3.1
-3306/tcp open  mysql       MySQL 5.0.51a-3ubuntu5
-5432/tcp open  postgresql  PostgreSQL DB 8.3.0 - 8.3.7
-5900/tcp open  vnc         VNC (protocol 3.3)
-6000/tcp open  X11         (access denied)
-6667/tcp open  irc         UnrealIRCd
-8009/tcp open  ajp13       Apache Jserv (Protocol v1.3)
+1) 21/tcp   open  ftp         vsftpd 2.3.4
+
+2) 22/tcp   open  ssh         OpenSSH 4.7p1 Debian 8ubuntu1 (protocol 2.0)
+
+3) 23/tcp   open  telnet      Linux telnetd
+
+4) 25/tcp   open  smtp        Postfix smtpd
+
+5) 53/tcp   open  domain      ISC BIND 9.4.2
+
+6) 111/tcp  open  rpcbind     2 (RPC #100000)
+
+7) 139/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+
+8) 445/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+
+9) 512/tcp  open  exec        netkit-rsh rexecd
+
+10) 513/tcp  open  login?
+
+11) 514/tcp  open  tcpwrapped
+
+12) 1099/tcp open  java-rmi    GNU Classpath grmiregistry
+
+13) 1524/tcp open  bindshell   Metasploitable root shell
+
+14) 2049/tcp open  nfs         2-4 (RPC #100003)
+
+15) 2121/tcp open  ftp         ProFTPD 1.3.1
+
+16) 3306/tcp open  mysql       MySQL 5.0.51a-3ubuntu5
+
+17) 5432/tcp open  postgresql  PostgreSQL DB 8.3.0 - 8.3.7
+
+18) 5900/tcp open  vnc         VNC (protocol 3.3)
+
+19) 6000/tcp open  X11         (access denied)
+
+20) 6667/tcp open  irc         UnrealIRCd
+
+21) 8009/tcp open  ajp13       Apache Jserv (Protocol v1.3)
+
 8180/tcp open  http        Apache Tomcat/Coyote JSP engine 1.1
+
 - Какие уязвимости были вами обнаружены? (список со ссылками: достаточно трёх уязвимостей)
   1)Apache Tomcat Manager - Application Deployer (Authenticated) Code Execution (Metasploit) https://www.exploit-db.com/exploits/16317 на порт 8180
+
   2)PostgreSQL - PostgreSQL 8.3.6 - Conversion Encoding Remote Denial of Service https://www.exploit-db.com/exploits/32849 на порт 5432
+  
   3) ftp - vsftpd 2.3.4 - Backdoor Command Execution https://www.exploit-db.com/exploits/49757 на порт 21
 
 Вывод NMAP:
